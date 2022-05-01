@@ -33,6 +33,6 @@ resource "aws_security_group" "allow-external" {
     to_port     = "80"
   }
 
-  name   = "${var.project}-${var.environment}-sg"
+  name   = "${var.project}-${var.environment}-external-sg"
   vpc_id = data.aws_vpc.selected.id
 }

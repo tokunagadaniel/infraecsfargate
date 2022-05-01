@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 defaults:
   run:
     shell: bash
@@ -60,3 +60,4 @@ jobs:
               repo: context.repo.repo,
               body: '👋 Thanks for reporting!'
             })
+g
